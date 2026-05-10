@@ -124,7 +124,7 @@
                 <div class="name-row">عبدالرحمن مصطفى عويس</div>
                 <div class="name-row">عمر ابراهيم كمال ابراهيم</div>
                 <div class="name-row">محمد مصطفى غريب احمد</div>
-                <div class="name-row">عبدالرحمن محمود محمد فهمي</div>
+                <div class="name-row">عبدالرحمن محمود محمد</div>
                 <div class="name-row">مهتدي ايمن محمود حسن</div>
                 <div class="name-row">محمود عبد الجواد طنطاوي</div>
                 <div class="name-row">شهد احمد ابراهيم محمد</div>
@@ -470,7 +470,7 @@
             </div>
         </div>
 
-        <span class="signature">حقوق الطبع والنشر محفوظة فقط للمطور (𝑋𝑠.𝐵𝑜𝑑𝑎)</span>
+        <span class="signature">حقوق الطبع والنشر محفوظة فقط للمطور ("𝐵𝑜𝑑𝑎")</span>
     </div>
 
     <script>
