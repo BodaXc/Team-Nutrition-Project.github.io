@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>الواجهة الرسمية | جامعة عين شمس - الدليل الشامل</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;500;700&family=Reem+Kufi:wght@700&family=Amiri:ital,wght@1,700&display=swap');
-
+        
         :root {
             --bg-color: #050505;
             --accent-blue: #007aff;
@@ -66,6 +66,7 @@
         /* --- الواجهة الرئيسية --- */
         .header-section { text-align: center; margin-bottom: 25px; }
         .header-section h1 { font-family: 'Reem Kufi', sans-serif; font-size: 2.2rem; background: linear-gradient(to bottom, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .university-info { color: var(--text-gray); margin-top: 5px; font-size: 0.95rem; }
         .badge { background: rgba(0, 122, 255, 0.1); color: var(--accent-blue); padding: 6px 20px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; border: 1px solid rgba(0, 122, 255, 0.2); margin-top: 10px; display: inline-block; }
         
         .names-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 20px; }
@@ -110,393 +111,497 @@
 </head>
 <body>
 
-    <div class="light-glow"></div>
+<div class="light-glow"></div>
 
-    <div class="main-frame">
-        
-        <div id="namesPage" class="page active">
-            <div class="header-section">
-                <h1>جامعة عين شمس</h1>
-                <p class="university-info">كلية التربية النوعية • الفرقة الأولى</p>
-                <div class="badge">( إعداد الطلاب )</div>
-            </div>
-            <div class="names-grid">
-                <div class="name-row">عبدالرحمن مصطفى عويس</div>
-                <div class="name-row">عمر ابراهيم كمال ابراهيم</div>
-                <div class="name-row">محمد مصطفى غريب احمد</div>
-                <div class="name-row">عبدالرحمن محمود محمد</div>
-                <div class="name-row">مهتدي ايمن محمود حسن</div>
-                <div class="name-row">محمود عبد الجواد طنطاوي</div>
-                <div class="name-row">شهد احمد ابراهيم محمد</div>
-                <div class="name-row">لوجينا حسام أبوبكر غريب</div>
-                <div class="name-row">فرح محمد سعد محمد</div>
-                <div class="name-row">فاطمه صابر احمد سليمان</div>
-            </div>
-            <div class="nav-container">
-                <div class="nav-card green" onclick="showPage('coursePage')">📘 <span>مقرر أسس الغذاء</span></div>
-                <div class="nav-card gold" onclick="showPage('detailPage')">💡 <span>شرح الباب الأول</span></div>
-                <div class="nav-card orange" onclick="showPage('secondChapterPage')">🍊 <span>شرح الباب الثاني</span></div>
-                <div class="nav-card red" onclick="showPage('thirdChapterPage')">🔥 <span>شرح الباب الثالث</span></div>
-                <div class="nav-card purple" onclick="showPage('fourthChapterPage')">🧬 <span>شرح الباب الرابع</span></div>
-                <div class="nav-card emerald" onclick="showPage('fifthChapterPage')">🥗 <span>شرح الباب الخامس</span></div>
-                <div class="nav-card coral" onclick="showPage('sixthChapterPage')">🛡️ <span>شرح الباب السادس</span></div>
-                <div class="nav-card sky" onclick="showPage('conceptsPage')">📚 <span>المفاهيم والمراجع</span></div>
-            </div>
+<div class="main-frame">
+    
+    <div id="namesPage" class="page active">
+        <div class="header-section">
+            <h1>جامعة عين شمس</h1>
+            <p class="university-info">كلية التربية النوعية • الفرقة الأولى</p>
+            <div class="badge">( إعداد الطلاب )</div>
         </div>
-
-        <div id="coursePage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة للرئيسية</button>
-            <h2 style="text-align:center; margin-bottom:20px; color:var(--accent-green);">الدليل الشامل للمقرر</h2>
-            
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">الباب الأول: العناصر الكبرى <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <strong>الكربوهيدرات:</strong> المصدر الأول للطاقة، تمد الدماغ بحوالي 140جم جلوكوز يومياً.<br>
-                    <strong>البروتينات:</strong> المادة العضوية الوحيدة المحتوية على نيتروجين (16%)، ضرورية لبناء الأنسجة.<br>
-                    <strong>الدهون:</strong> توفر 9 سعرات لكل جرام، وتحمل الفيتامينات الذائبة (A, D, E, K).
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">الباب الثاني: العناصر الصغرى <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <strong>الفيتامينات:</strong> ذائبة في الماء (C, B) وذائبة في الدهون (A, D, E, K).<br>
-                    <strong>الأملاح:</strong> الكالسيوم والفوسفور للعظام، الحديد للهيموجلوبين، واليود للغدة الدرقية.
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">الباب الثالث: التمثيل الغذائي <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <ul>
-                        <li><strong>الهدم (Catabolism):</strong> تكسير الروابط لإنتاج الطاقة.</li>
-                        <li><strong>البناء (Anabolism):</strong> ترميم الخلايا وبناء الأنسجة.</li>
-                        <li><strong>BMR:</strong> معدل الأيض الأساسي في حالة الراحة التامة.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">الباب الرابع: الهضم والامتصاص <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <ul>
-                        <li><strong>المعدة:</strong> وسط حامضي (pH 1.5-2) لهضم البروتينات.</li>
-                        <li><strong>الأمعاء:</strong> الوسط القاعدي والامتصاص النهائي عبر الخملات.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">الباب الخامس: أمراض سوء التغذية <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <ul>
-                        <li><strong>كواشيوركر:</strong> نقص بروتين حاد.</li>
-                        <li><strong>مارزمس:</strong> نقص شامل في الطاقة والبروتين.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">الباب السادس: سلامة الغذاء <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <p><strong>منطقة الخطر:</strong> تنشط البكتيريا بين 5 و 60 درجة مئوية.</p>
-                    <p><strong>الحفظ:</strong> يتم عبر التبريد، التجميد، أو البسترة.</p>
-                </div></div>
-            </div>
+        <div class="names-grid">
+            <div class="name-row">عبدالرحمن مصطفى عويس</div>
+            <div class="name-row">عمر ابراهيم كمال ابراهيم</div>
+            <div class="name-row">محمد مصطفى غريب احمد</div>
+            <div class="name-row">عبدالرحمن محمود محمد</div>
+            <div class="name-row">مهتدي ايمن محمود حسن</div>
+            <div class="name-row">محمود عبد الجواد الطنطاوي</div>
+            <div class="name-row">شهد احمد ابراهيم محمد</div>
+            <div class="name-row">لوجينا حسام أبوبكر غريب</div>
+            <div class="name-row">فرح محمد سعد محمد</div>
+            <div class="name-row">فاطمه صابر احمد سليمان</div>
         </div>
-
-        <div id="detailPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-gold); margin-bottom:20px;">الشرح التفصيلي للباب الأول</h2>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">1. الكربوهيدرات (التفصيل الكامل) <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <h3>أولاً: التعريف والتركيب</h3>
-                    <p>تتكون من (C, H, O) بنسبة (1:2:1). تسمى مائيات الكربون. الوظيفة الكيميائية: مركبات بوليهيدروكسي ألديهيدية أو كيتونية.</p>
-                    <h3>ثانياً: التصنيف الدقيق</h3>
-                    <strong>1. الأحادية:</strong> الجلوكوز (سكر الدم)، الفركتوز (سكر الفاكهة)، الجالاكتوز.<br>
-                    <strong>2. الثنائية:</strong> السكروز (سكر مائدة)، اللاكتوز (سكر حليب)، المالتوز (سكر شعير).<br>
-                    <strong>3. العديدة:</strong> النشا، الجليكوجين (النشا الحيواني يُخزن في الكبد 100جم والعضلات 400جم)، الألياف (ذائبة وغير ذائبة).
-                    <div class="info-card"><strong>Protein Sparing:</strong> الكربوهيدرات تحمي البروتين من الاحتراق ليتفرغ لبناء الأنسجة.</div>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">2. البروتينات (التفصيل الكامل) <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <h3>أولاً: التركيب الكيميائي</h3>
-                    <p>تتكون من أحماض أمينية مرتبطة بروابط ببتيدية. تحتوي على <span class="highlight">النيتروجين N</span> بنسبة ثابتة (16%).</p>
-                    <h3>ثانياً: الأحماض الأمينية</h3>
-                    <ul>
-                        <li><strong>أساسية (9 أحماض):</strong> لا يصنعها الجسم (ليسين، تريبتوفان).</li>
-                        <li><strong>غير أساسية:</strong> يصنعها الجسم.</li>
-                    </ul>
-                    <div class="detail-box"><strong>بروتينات كاملة:</strong> مصادر حيوانية (البيض هو المقياس الذهبي).</div>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">3. الدهون (التفصيل الكامل) <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <p>الجرام الواحد يعطي <span class="highlight">9 سعرات حرارية</span>.</p>
-                    <h3>الأنواع:</h3>
-                    <ul>
-                        <li><strong>مشبعة:</strong> صلبة (حيوانية).</li>
-                        <li><strong>غير مشبعة:</strong> سائلة (أوميجا 3 و 6).</li>
-                    </ul>
-                    <div class="info-card"><strong>وظائف فسيولوجية:</strong> امتصاص فيتامينات (A, D, E, K)، الحماية للأعضاء، والعزل الحراري.</div>
-                </div></div>
-            </div>
+        <div class="nav-container">
+            <div class="nav-card green" onclick="showPage('coursePage')">📘 <span>مقرر أسس الغذاء</span></div>
+            <div class="nav-card emerald" onclick="showPage('nutritionPage')">🍽️ <span>شرح الغذاء والتغذية</span></div>
+            <div class="nav-card gold" onclick="showPage('detailPage')">💡 <span>شرح الباب الأول</span></div>
+            <div class="nav-card orange" onclick="showPage('secondChapterPage')">🍊 <span>شرح الباب الثاني</span></div>
+            <div class="nav-card red" onclick="showPage('thirdChapterPage')">🔥 <span>شرح الباب الثالث</span></div>
+            <div class="nav-card purple" onclick="showPage('fourthChapterPage')">🧬 <span>شرح الباب الرابع</span></div>
+            <div class="nav-card emerald" onclick="showPage('fifthChapterPage')">🥗 <span>شرح الباب الخامس</span></div>
+            <div class="nav-card coral" onclick="showPage('sixthChapterPage')">🛡️ <span>شرح الباب السادس</span></div>
+            <div class="nav-card sky" onclick="showPage('conceptsPage')">📚 <span>المفاهيم والمراجع</span></div>
         </div>
-
-        <div id="secondChapterPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-orange); margin-bottom:20px;">الباب الثاني: العناصر الغذائية الصغرى</h2>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">1. الفيتامينات الذائبة في الدهون (A, D, E, K) <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <p>تتميز هذه المجموعة بأنها تُخزن في دهون الجسم والكبد.</p>
-                    <h3>فيتامين A (الريتينول)</h3><p>للرؤية والمناعة. نقصه يسبب العشى الليلي.</p>
-                    <h3>فيتامين D (الشمس)</h3><p>لامتصاص الكالسيوم. نقصه يسبب الكساح.</p>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">2. الفيتامينات الذائبة في الماء (C & B) <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <h3>فيتامين C</h3><p>للكولاجين والتئام الجروح. نقصه يسبب الاسقربوط.</p>
-                </div></div>
-            </div>
-        </div>
-
-        <div id="thirdChapterPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-red); margin-bottom:20px;">الباب الثالث: التمثيل الغذائي وتوازن الطاقة</h2>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">1. مفهوم التمثيل الغذائي <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <p>الهدم (Catabolism): تكسير لإنتاج الطاقة. البناء (Anabolism): بناء الخلايا.</p>
-                </div></div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">2. حساب الـ BMR <span>+</span></button>
-                <div class="acc-content"><div class="content-inner">
-                    <div class="math-box">الرجال: 1 × الوزن × 24 | النساء: 0.9 × الوزن × 24</div>
-                </div></div>
-            </div>
-        </div>
-
-        <div id="fourthChapterPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-purple); margin-bottom:20px;">الباب الرابع: الهضم والامتصاص (Digestion & Absorption)</h2>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">1. مفهوم الهضم وأنواعه <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <p>الهضم هو عملية تحويل جزيئات الغذاء الكبيرة والمعقدة إلى جزيئات صغيرة ذائبة ليسهل امتصاصها عبر أغشية الخلايا.</p>
-                        <ul>
-                            <li><strong>الهضم الميكانيكي:</strong> مثل تقطيع الطعام بالأسنان وحركة المعدة.</li>
-                            <li><strong>الهضم الكيميائي:</strong> تدخل الإنزيمات والعصارات لتحليل الروابط الكيميائية.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">2. رحلة الغذاء في القناة الهضمية <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <div class="process-box"><span class="organ-tag">1. الفم</span><p>يبدأ هضم <span class="highlight">النشويات</span> بفعل التيالين.</p></div>
-                        <div class="process-box"><span class="organ-tag">2. المعدة</span><p>يبدأ هضم <span class="highlight">البروتينات</span> بفعل الببسين وحمض HCl.</p></div>
-                        <div class="process-box"><span class="organ-tag">3. الأمعاء الدقيقة</span><p>المحطة النهائية لهضم كافة العناصر والامتصاص عبر الخملات.</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">3. جدول الإنزيمات <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <table class="table-style">
-                            <thead><tr><th>المادة</th><th>الإنزيم</th><th>الناتج</th></tr></thead>
-                            <tbody>
-                                <tr><td>النشويات</td><td>الأميليز</td><td>جلوكوز</td></tr>
-                                <tr><td>البروتينات</td><td>الببسين/التريبسين</td><td>أحماض أمينية</td></tr>
-                                <tr><td>الدهون</td><td>الليبيز+الصفراء</td><td>أحماض دهنية</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="fifthChapterPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-emerald); margin-bottom:20px;">الباب الخامس: تخطيط الوجبات</h2>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">1. أسس تخطيط الوجبات <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <ul>
-                            <li><span class="highlight">الكفاية:</span> توفير سعرات وعناصر كافية.</li>
-                            <li><span class="highlight">التوازن:</span> عدم طغيان عنصر على آخر.</li>
-                            <li><span class="highlight">الاعتدال:</span> كميات معقولة من السكريات.</li>
-                            <li><span class="highlight">التنوع:</span> أطعمة مختلفة من نفس المجموعة.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">2. نظام الطبق الصحي (MyPlate) <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <table class="table-style">
-                            <thead><tr><th>القسم</th><th>النسبة</th><th>أمثلة</th></tr></thead>
-                            <tbody>
-                                <tr><td style="color: #2ecc71;">الخضروات/الفواكه</td><td>50%</td><td>سلطة، فواكه</td></tr>
-                                <tr><td style="color: #e67e22;">الحبوب</td><td>25%</td><td>خبز أسمر، أرز</td></tr>
-                                <tr><td style="color: #ff3b30;">البروتين</td><td>25%</td><td>لحوم، بقوليات</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="sixthChapterPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-coral); margin-bottom:20px;">الباب السادس: سلامة وحفظ الغذاء</h2>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">1. أنواع تلوث الغذاء (Food Contamination) <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <p>تلوث الغذاء هو وجود أي مادة غريبة تجعله غير صالح. ينقسم إلى:</p>
-                        <ul>
-                            <li><strong>تلوث ميكروبيولوجي:</strong> بكتيريا وفيروسات (مثل السالمونيلا).</li>
-                            <li><strong>تلوث كيميائي:</strong> بقايا مبيدات ومنظفات.</li>
-                            <li><strong>تلوث فيزيائي:</strong> زجاج، خشب، أو شعر.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">2. درجة الحرارة وسلامة الغذاء <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <div class="math-box" style="color:var(--accent-coral); border-color:var(--accent-coral);">منطقة الخطر (Danger Zone): بين 5°C و 60°C</div>
-                        <div class="info-card">في هذه المنطقة تتضاعف البكتيريا بسرعة كبيرة.</div>
-                        <ul>
-                            <li><strong>التبريد:</strong> أقل من 5°C.</li>
-                            <li><strong>التجميد:</strong> أقل من -18°C.</li>
-                            <li><strong>الطهي الجيد:</strong> أعلى من 75°C.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">3. طرق حفظ الغذاء (Food Preservation) <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <h3>أولاً: الطرق الفيزيائية</h3>
-                        <div class="detail-box"><strong>البسترة:</strong> تسخين ثم تبريد فجائي لقتل الميكروبات.</div>
-                        <div class="detail-box"><strong>التجفيف:</strong> إزالة الرطوبة.</div>
-                        <h3>ثانياً: الطرق الكيميائية</h3>
-                        <p>التمليح، التسكير، التدخين، واستخدام المواد الحافظة.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">4. القواعد الخمس لسلامة الغذاء <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <div class="info-card">
-                            <ol>
-                                <li>النظافة المستمرة.</li>
-                                <li>الفصل بين النيئ والمطبوخ.</li>
-                                <li>الطهي الجيد.</li>
-                                <li>الحفاظ على الحرارة.</li>
-                                <li>استخدام مياه ومواد خام آمنة.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="conceptsPage" class="page">
-            <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
-            <h2 style="text-align:center; color:var(--accent-sky); margin-bottom:25px;">📚 المفاهيم والمراجع العلمية</h2>
-            
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">📖 القاموس الشامل للمصطلحات العلمية <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <table class="table-style">
-                            <thead><tr><th>المصطلح</th><th>التعريف العلمي</th></tr></thead>
-                            <tbody>
-                                <tr><td>علم التغذية</td><td>العلم الذي يبحث في علاقة الغذاء بالكائن الحي، ويشمل التناول والهضم والامتصاص.</td></tr>
-                                <tr><td>المغذيات</td><td>المواد الكيميائية التي يعتمد عليها الجسم في الطاقة والنمو والترميم.</td></tr>
-                                <tr><td>BMR</td><td>أقل قدر من الطاقة يحتاجه الجسم للوظائف الحيوية أثناء الراحة.</td></tr>
-                                <tr><td>السعر الحراري</td><td>وحدة قياس الطاقة الموجودة في الغذاء.</td></tr>
-                                <tr><td>الجليكوجين</td><td>الصورة التي يخزن بها الجسم الكربوهيدرات داخل الكبد والعضلات.</td></tr>
-                                <tr><td>الأحماض الأمينية الأساسية</td><td>أحماض لا يستطيع الجسم تصنيعها ويجب الحصول عليها من الغذاء.</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">🍕 دليل المذاكرة التطبيقي (الخميرة والبيتزا) <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <h3>🧪 علم أساسيات الخميرة</h3>
-                        <p>كائنات حية دقيقة وحيدة الخلية، غنية بفيتامين B المركب والبروتينات.</p>
-                        <div class="detail-box"><strong>الأنواع:</strong> خميرة بيرة طازجة، خميرة جافة (Yeast).</div>
-                        <div class="math-box">Sucrose → Glucose + Fructose → Alcohol + CO2</div>
-                        <h3>🍞 تكنولوجيا عجين البيتزا</h3>
-                        <ul>
-                            <li>الطريقة البطيئة (Slow)، المعتدلة، الخلط العنيف (Fast).</li>
-                        </ul>
-                        <div class="info-card"><strong>المقادير:</strong> دقيق، ملح، زيت، خميرة، سكر، حليب، بيضة.</div>
-                        <h3>🔥 مراحل النمو والخبز</h3>
-                        <ol>
-                            <li>نشاط الخميرة، التخمير الأول، التخمير الثاني، مرحلة التشكيل.</li>
-                        </ol>
-                        <div class="math-box" style="color:#ff7675;">يجب تجنب زيادة التخمير</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="acc-item">
-                <button class="acc-btn" onclick="toggleAcc(this)">🥗 الربط الأكاديمي (تغذية + سلامة) <span>+</span></button>
-                <div class="acc-content">
-                    <div class="content-inner">
-                        <div class="info-card"><strong>الخاصية الأسموزية:</strong> لا يوضع الملح فوق الخميرة مباشرة لأنه يسحب الماء من خلاياها.</div>
-                        <div class="detail-box"><strong>القيمة الغذائية:</strong> الأنشوجة ترفع أوميجا 3، والجبن يوفر الكالسيوم، وزيت الزيتون يوفر دهوناً غير مشبعة.</div>
-                        <div class="math-box">العجين المبلل بيئة خصبة للبكتيريا (يجب الحذر من منطقة الخطر).</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <span class="signature">حقوق الطبع والنشر محفوظة فقط للمطور ("𝐵𝑜𝑑𝑎")</span>
     </div>
 
-    <script>
-        function showPage(id) {
-            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
+    <div id="coursePage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة للرئيسية</button>
+        <h2 style="text-align:center; margin-bottom:20px; color:var(--accent-green);">الدليل الشامل للمقرر</h2>
+        
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">الباب الأول: العناصر الكبرى <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <strong>الكربوهيدرات:</strong> المصدر الأول للطاقة، تمد الدماغ بحوالي 140جم جلوكوز يومياً.<br>
+                <strong>البروتينات:</strong> المادة العضوية الوحيدة المحتوية على نيتروجين (16%)، ضرورية لبناء الأنسجة.<br>
+                <strong>الدهون:</strong> توفر 9 سعرات لكل جرام، وتحمل الفيتامينات الذائبة (A, D, E, K).
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">الباب الثاني: العناصر الصغرى <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <strong>الفيتامينات:</strong> ذائبة في الماء (C, B) وذائبة في الدهون (A, D, E, K).<br>
+                <strong>الأملاح:</strong> الكالسيوم والفوسفور للعظام، الحديد للهيموجلوبين، واليود للغدة الدرقية.
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">الباب الثالث: التمثيل الغذائي <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <ul>
+                    <li><strong>الهدم (Catabolism):</strong> تكسير الروابط لإنتاج الطاقة.</li>
+                    <li><strong>البناء (Anabolism):</strong> ترميم الخلايا وبناء الأنسجة.</li>
+                    <li><strong>BMR:</strong> معدل الأيض الأساسي في حالة الراحة التامة.</li>
+                </ul>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">الباب الرابع: الهضم والامتصاص <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <ul>
+                    <li><strong>المعدة:</strong> وسط حامضي (pH 1.5-2) لهضم البروتينات.</li>
+                    <li><strong>الأمعاء:</strong> الوسط القاعدي والامتصاص النهائي عبر الخملات.</li>
+                </ul>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">الباب الخامس: أمراض سوء التغذية <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <ul>
+                    <li><strong>كواشيوركر:</strong> نقص بروتين حاد.</li>
+                    <li><strong>مارزمس:</strong> نقص شامل في الطاقة والبروتين.</li>
+                </ul>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">الباب السادس: سلامة الغذاء <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <p><strong>منطقة الخطر:</strong> تنشط البكتيريا بين 5 و 60 درجة مئوية.</p>
+                <p><strong>الحفظ:</strong> يتم عبر التبريد، التجميد، أو البسترة.</p>
+            </div></div>
+        </div>
+    </div>
 
-        function toggleAcc(btn) {
-            const content = btn.nextElementSibling;
-            const isOpen = content.style.maxHeight;
-            const parentPage = btn.closest('.page');
-            
-            parentPage.querySelectorAll('.acc-content').forEach(c => {
-                c.style.maxHeight = null;
-                if(c.previousElementSibling.querySelector('span')) {
-                    c.previousElementSibling.querySelector('span').innerText = '+';
-                }
-            });
+    <div id="nutritionPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-green); margin-bottom:20px;">🍽️ شرح منهج الغذاء والتغذية (علمي²)</h2>
+        
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">أولاً: مكونات الغذاء الأساسية <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <div class="detail-box">يحتاج جسم الإنسان إلى حوالي 45 مادة غذائية أساسية لبناء الجسم والحفاظ على الصحة.</div>
+                    <h3>1. المواد البروتينية</h3>
+                    <p>مصادرها: اللبن، البيض، اللحوم، الأسماك، والبقوليات. <br> أهميتها: بناء الأنسجة والعضلات وتعويض التالف.</p>
+                    <h3>2. المواد الكربوهيدراتية</h3>
+                    <p>تشمل النشويات مثل الحبوب والخبز والبطاطس والسكريات. <br> تعتبر المصدر الأساسي للطاقة.</p>
+                    <h3>3. المواد الدهنية</h3>
+                    <p>مصادرها: الزيوت النباتية، الزبد، السمن. <br> تساعد على امتصاص الفيتامينات وإمداد الجسم بالطاقة.</p>
+                    <h3>4. الأملاح المعدنية</h3>
+                    <ul>
+                        <li>الكالسيوم والفوسفور للعظام.</li>
+                        <li>الحديد لتكوين الهيموجلوبين.</li>
+                        <li>اليود للغدة الدرقية.</li>
+                        <li>الصوديوم والبوتاسيوم لتنظيم السوائل.</li>
+                    </ul>
+                    <h3>5. الفيتامينات</h3>
+                    <p>مثل فيتامين A, B المركب, C, D, E, K.</p>
+                </div>
+            </div>
+        </div>
 
-            if (!isOpen) {
-                content.style.maxHeight = content.scrollHeight + "px";
-                btn.querySelector('span').innerText = '−';
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">ثانياً: أسس تجهيز الوجبات الغذائية <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <h3>الميزانية والاحتياجات</h3>
+                    <p>يجب مراعاة احتياجات الأسرة وتقديم وجبات اقتصادية باستخدام البدائل المناسبة.</p>
+                    <h3>التنوع والجذب</h3>
+                    <p>تنوع الألوان والأطعمة يجعل الوجبة أكثر جاذبية.</p>
+                    <h3>النكهة والقوام</h3>
+                    <p>يجب التناسق بين نكهات الأطعمة والقوام بين اللين والصلب.</p>
+                    <h3>تجنب التكرار</h3>
+                    <div class="info-card">من الأخطاء الشائعة تكرار نفس الصنف أو نفس المكونات داخل الوجبة.</div>
+                    <h3>طرق الطهي</h3>
+                    <p>يفضل استخدام طرق سهلة وسريعة تحافظ على القيمة الغذائية.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">ثالثاً: أهمية الطهي وأثره على العناصر الغذائية <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <div class="detail-box">الطهي هو تعريض الطعام للحرارة لجعله أشهى وأسهل هضماً وأكثر أماناً.</div>
+                    <h3>أهمية الطهي</h3>
+                    <ul>
+                        <li>تليين أنسجة اللحوم.</li>
+                        <li>كسر ألياف الخضروات.</li>
+                        <li>قتل الميكروبات.</li>
+                    </ul>
+                    <h3>أثر الحرارة على البروتينات</h3>
+                    <p>تسبب الحرارة تجمد البروتين وانكماشه، والطهي الزائد يقلل القيمة الغذائية.</p>
+                    <h3>أثر الحرارة على الكربوهيدرات</h3>
+                    <p>الحرارة تساعد على تحويل النشا لسكريات سهلة الهضم.</p>
+                    <h3>أثر الحرارة على الفيتامينات</h3>
+                    <div class="math-box">فيتامين C قد يفقد بنسبة تصل إلى 98% بسبب الحرارة المرتفعة.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">رابعاً: طرق الطهي والتطبيقات العملية <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <h3>1. قاعدة السلق</h3>
+                    <p>طهي الطعام في الماء عند درجة الغليان 100°م.</p>
+                    <div class="info-card">المميزات: سهلة الهضم وخفيفة. <br> العيوب: فقد بعض العناصر الغذائية عند التخلص من ماء السلق.</div>
+                    <h3>تطبيقات السلق</h3>
+                    <ul><li>الدجاج المسلوق.</li><li>المكرونة الإسباجتي.</li><li>السلطة الشتوية.</li></ul>
+                    <h3>2. قاعدة التسبيك</h3>
+                    <ul><li>ني × ني.</li><li>تسبيك خفيف.</li><li>تسبيك ثقيل.</li></ul>
+                    <h3>3. قاعدة التشريب</h3>
+                    <p>طهي الطعام في كمية قليلة جداً من السائل حتى يتشربه بالكامل مثل الأرز.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">خامساً: نصائح مهمة في المقرر <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <h3>سلق الخضروات</h3>
+                    <p>يفضل سلق الخضروات بقشرها لتقليل فقد الفيتامينات.</p>
+                    <h3>الخضروات الخضراء</h3>
+                    <p>يفضل كشف الغطاء لمدة 5 دقائق للحفاظ على اللون الأخضر.</p>
+                    <h3>اللحوم المجمدة</h3>
+                    <div class="detail-box">يفضل فك التجميد داخل الثلاجة أو تحت ماء جارٍ وليس في درجة حرارة الغرفة.</div>
+                    <h3>تقديم الطعام</h3>
+                    <ul><li>الأطعمة الساخنة تقدم ساخنة.</li><li>السلطات والحلويات تقدم باردة.</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-gold); margin-bottom:20px;">الشرح التفصيلي للباب الأول</h2>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">1. الكربوهيدرات (التفصيل الكامل) <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <h3>أولاً: التعريف والتركيب</h3>
+                <p>تتكون من (C, H, O) بنسبة (1:2:1). تسمى مائيات الكربون. الوظيفة الكيميائية: مركبات بوليهيدروكسي ألديهيدية أو كيتونية.</p>
+                <h3>ثانياً: التصنيف الدقيق</h3>
+                <strong>1. الأحادية:</strong> الجلوكوز (سكر الدم)، الفركتوز (سكر الفاكهة)، الجالاكتوز.<br>
+                <strong>2. الثنائية:</strong> السكروز (سكر مائدة)، اللاكتوز (سكر حليب)، المالتوز (سكر شعير).<br>
+                <strong>3. العديدة:</strong> النشا، الجليكوجين (النشا الحيواني يُخزن في الكبد 100جم والعضلات 400جم)، الألياف (ذائبة وغير ذائبة).
+                <div class="info-card"><strong>Protein Sparing:</strong> الكربوهيدرات تحمي البروتين من الاحتراق ليتفرغ لبناء الأنسجة.</div>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">2. البروتينات (التفصيل الكامل) <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <h3>أولاً: التركيب الكيميائي</h3>
+                <p>تتكون من أحماض أمينية مرتبطة بروابط ببتيدية. تحتوي على <span class="highlight">النيتروجين N</span> بنسبة ثابتة (16%).</p>
+                <h3>ثانياً: الأحماض الأمينية</h3>
+                <ul>
+                    <li><strong>أساسية (9 أحماض):</strong> لا يصنعها الجسم (ليسين، تريبتوفان).</li>
+                    <li><strong>غير أساسية:</strong> يصنعها الجسم.</li>
+                </ul>
+                <div class="detail-box"><strong>بروتينات كاملة:</strong> مصادر حيوانية (البيض هو المقياس الذهبي).</div>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">3. الدهون (التفصيل الكامل) <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <p>الجرام الواحد يعطي <span class="highlight">9 سعرات حرارية</span>.</p>
+                <h3>الأنواع:</h3>
+                <ul>
+                    <li><strong>مشبعة:</strong> صلبة (حيوانية).</li>
+                    <li><strong>غير مشبعة:</strong> سائلة (أوميجا 3 و 6).</li>
+                </ul>
+                <div class="info-card"><strong>وظائف فسيولوجية:</strong> امتصاص فيتامينات (A, D, E, K)، الحماية للأعضاء، والعزل الحراري.</div>
+            </div></div>
+        </div>
+    </div>
+
+    <div id="secondChapterPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-orange); margin-bottom:20px;">الباب الثاني: العناصر الغذائية الصغرى</h2>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">1. الفيتامينات الذائبة في الدهون (A, D, E, K) <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <p>تتميز هذه المجموعة بأنها تُخزن في دهون الجسم والكبد.</p>
+                <h3>فيتامين A (الريتينول)</h3><p>للرؤية والمناعة. نقصه يسبب العشى الليلي.</p>
+                <h3>فيتامين D (الشمس)</h3><p>لامتصاص الكالسيوم. نقصه يسبب الكساح.</p>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">2. الفيتامينات الذائبة في الماء (C & B) <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <h3>فيتامين C</h3><p>للكولاجين والتئام الجروح. نقصه يسبب الاسقربوط.</p>
+            </div></div>
+        </div>
+    </div>
+
+    <div id="thirdChapterPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-red); margin-bottom:20px;">الباب الثالث: التمثيل الغذائي وتوازن الطاقة</h2>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">1. مفهوم التمثيل الغذائي <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <p>الهدم (Catabolism): تكسير لإنتاج الطاقة. البناء (Anabolism): بناء الخلايا.</p>
+            </div></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">2. حساب الـ BMR <span>+</span></button>
+            <div class="acc-content"><div class="content-inner">
+                <div class="math-box">الرجال: 1 × الوزن × 24 | النساء: 0.9 × الوزن × 24</div>
+            </div></div>
+        </div>
+    </div>
+
+    <div id="fourthChapterPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-purple); margin-bottom:20px;">الباب الرابع: الهضم والامتصاص (Digestion & Absorption)</h2>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">1. مفهوم الهضم وأنواعه <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <p>الهضم هو عملية تحويل جزيئات الغذاء الكبيرة والمعقدة إلى جزيئات صغيرة ذائبة ليسهل امتصاصها عبر أغشية الخلايا.</p>
+                    <ul>
+                        <li><strong>الهضم الميكانيكي:</strong> مثل تقطيع الطعام بالأسنان وحركة المعدة.</li>
+                        <li><strong>الهضم الكيميائي:</strong> تدخل الإنزيمات والعصارات لتحليل الروابط الكيميائية.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">2. رحلة الغذاء في القناة الهضمية <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <div class="process-box"><span class="organ-tag">1. الفم</span><p>يبدأ هضم <span class="highlight">النشويات</span> بفعل التيالين.</p></div>
+                    <div class="process-box"><span class="organ-tag">2. المعدة</span><p>يبدأ هضم <span class="highlight">البروتينات</span> بفعل الببسين وحمض HCl.</p></div>
+                    <div class="process-box"><span class="organ-tag">3. الأمعاء الدقيقة</span><p>المحطة النهائية لهضم كافة العناصر والامتصاص عبر الخملات.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">3. جدول الإنزيمات <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <table class="table-style">
+                        <thead><tr><th>المادة</th><th>الإنزيم</th><th>الناتج</th></tr></thead>
+                        <tbody>
+                            <tr><td>النشويات</td><td>الأميليز</td><td>جلوكوز</td></tr>
+                            <tr><td>البروتينات</td><td>الببسين/التريبسين</td><td>أحماض أمينية</td></tr>
+                            <tr><td>الدهون</td><td>الليبيز+الصفراء</td><td>أحماض دهنية</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fifthChapterPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-emerald); margin-bottom:20px;">الباب الخامس: تخطيط الوجبات</h2>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">1. أسس تخطيط الوجبات <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <ul>
+                        <li><span class="highlight">الكفاية:</span> توفير سعرات وعناصر كافية.</li>
+                        <li><span class="highlight">التوازن:</span> عدم طغيان عنصر على آخر.</li>
+                        <li><span class="highlight">الاعتدال:</span> كميات معقولة من السكريات.</li>
+                        <li><span class="highlight">التنوع:</span> أطعمة مختلفة من نفس المجموعة.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">2. نظام الطبق الصحي (MyPlate) <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <table class="table-style">
+                        <thead><tr><th>القسم</th><th>النسبة</th><th>أمثلة</th></tr></thead>
+                        <tbody>
+                            <tr><td style="color: #2ecc71;">الخضروات/الفواكه</td><td>50%</td><td>سلطة، فواكه</td></tr>
+                            <tr><td style="color: #e67e22;">الحبوب</td><td>25%</td><td>خبز أسمر، أرز</td></tr>
+                            <tr><td style="color: #ff3b30;">البروتين</td><td>25%</td><td>لحوم، بقوليات</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sixthChapterPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-coral); margin-bottom:20px;">الباب السادس: سلامة وحفظ الغذاء</h2>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">1. أنواع تلوث الغذاء (Food Contamination) <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <p>تلوث الغذاء هو وجود أي مادة غريبة تجعله غير صالح. ينقسم إلى:</p>
+                    <ul>
+                        <li><strong>تلوث ميكروبيولوجي:</strong> بكتيريا وفيروسات (مثل السالمونيلا).</li>
+                        <li><strong>تلوث كيميائي:</strong> بقايا مبيدات ومنظفات.</li>
+                        <li><strong>تلوث فيزيائي:</strong> زجاج، خشب، أو شعر.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">2. درجة الحرارة وسلامة الغذاء <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <div class="math-box" style="color:var(--accent-coral); border-color:var(--accent-coral);">منطقة الخطر (Danger Zone): بين 5°C و 60°C</div>
+                    <div class="info-card">في هذه المنطقة تتضاعف البكتيريا بسرعة كبيرة.</div>
+                    <ul>
+                        <li><strong>التبريد:</strong> أقل من 5°C.</li>
+                        <li><strong>التجميد:</strong> أقل من -18°C.</li>
+                        <li><strong>الطهي الجيد:</strong> أعلى من 75°C.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">3. طرق حفظ الغذاء (Food Preservation) <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <h3>أولاً: الطرق الفيزيائية</h3>
+                    <div class="detail-box"><strong>البسترة:</strong> تسخين ثم تبريد فجائي لقتل الميكروبات.</div>
+                    <div class="detail-box"><strong>التجفيف:</strong> إزالة الرطوبة.</div>
+                    <h3>ثانياً: الطرق الكيميائية</h3>
+                    <p>التمليح، التسكير، التدخين، واستخدام المواد الحافظة.</p>
+                </div>
+            </div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">4. القواعد الخمس لسلامة الغذاء <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <div class="info-card">
+                        <ol>
+                            <li>النظافة المستمرة.</li>
+                            <li>الفصل بين النيئ والمطبوخ.</li>
+                            <li>الطهي الجيد.</li>
+                            <li>الحفاظ على الحرارة.</li>
+                            <li>استخدام مياه ومواد خام آمنة.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="conceptsPage" class="page">
+        <button class="back-btn" onclick="showPage('namesPage')">← العودة</button>
+        <h2 style="text-align:center; color:var(--accent-sky); margin-bottom:25px;">📚 المفاهيم والمراجع العلمية</h2>
+        
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">📖 القاموس الشامل للمصطلحات العلمية <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <table class="table-style">
+                        <thead><tr><th>المصطلح</th><th>التعريف العلمي</th></tr></thead>
+                        <tbody>
+                            <tr><td>علم التغذية</td><td>العلم الذي يبحث في علاقة الغذاء بالكائن الحي، ويشمل التناول والهضم والامتصاص.</td></tr>
+                            <tr><td>المغذيات</td><td>المواد الكيميائية التي يعتمد عليها الجسم في الطاقة والنمو والترميم.</td></tr>
+                            <tr><td>BMR</td><td>أقل قدر من الطاقة يحتاجه الجسم للوظائف الحيوية أثناء الراحة.</td></tr>
+                            <tr><td>السعر الحراري</td><td>وحدة قياس الطاقة الموجودة في الغذاء.</td></tr>
+                            <tr><td>الجليكوجين</td><td>الصورة التي يخزن بها الجسم الكربوهيدرات داخل الكبد والعضلات.</td></tr>
+                            <tr><td>الأحماض الأمينية الأساسية</td><td>أحماض لا يستطيع الجسم تصنيعها ويجب الحصول عليها من الغذاء.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">🍕 دليل المذاكرة التطبيقي (الخميرة والبيتزا) <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <h3>🧪 علم أساسيات الخميرة</h3>
+                    <p>كائنات حية دقيقة وحيدة الخلية، غنية بفيتامين B المركب والبروتينات.</p>
+                    <div class="detail-box"><strong>الأنواع:</strong> خميرة بيرة طازجة، خميرة جافة (Yeast).</div>
+                    <div class="math-box">Sucrose → Glucose + Fructose → Alcohol + CO2</div>
+                    <h3>🍞 تكنولوجيا عجين البيتزا</h3>
+                    <ul>
+                        <li>الطريقة البطيئة (Slow)، المعتدلة، الخلط العنيف (Fast).</li>
+                    </ul>
+                    <div class="info-card"><strong>المقادير:</strong> دقيق، ملح، زيت، خميرة، سكر، حليب، بيضة.</div>
+                    <h3>🔥 مراحل النمو والخبز</h3>
+                    <ol>
+                        <li>نشاط الخميرة، التخمير الأول، التخمير الثاني، مرحلة التشكيل.</li>
+                    </ol>
+                    <div class="math-box" style="color:#ff7675;">يجب تجنب زيادة التخمير</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="acc-item">
+            <button class="acc-btn" onclick="toggleAcc(this)">🥗 الربط الأكاديمي (تغذية + سلامة) <span>+</span></button>
+            <div class="acc-content">
+                <div class="content-inner">
+                    <div class="info-card"><strong>الخاصية الأسموزية:</strong> لا يوضع الملح فوق الخميرة مباشرة لأنه يسحب الماء من خلاياها.</div>
+                    <div class="detail-box"><strong>القيمة الغذائية:</strong> الأنشوجة ترفع أوميجا 3، والجبن يوفر الكالسيوم، وزيت الزيتون يوفر دهوناً غير مشبعة.</div>
+                    <div class="math-box">العجين المبلل بيئة خصبة للبكتيريا (يجب الحذر من منطقة الخطر).</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span class="signature">حقوق الطبع والنشر محفوظة فقط للمطور ("𝐵𝑜𝑑𝑎")</span>
+</div>
+
+<script>
+    function showPage(id) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    function toggleAcc(btn) {
+        const content = btn.nextElementSibling;
+        const isOpen = content.style.maxHeight;
+        const parentPage = btn.closest('.page');
+        
+        // إغلاق أي أكورديون مفتوح في نفس الصفحة
+        parentPage.querySelectorAll('.acc-content').forEach(c => {
+            c.style.maxHeight = null;
+            if(c.previousElementSibling.querySelector('span')) {
+                c.previousElementSibling.querySelector('span').innerText = '+';
             }
+        });
+
+        if (!isOpen) {
+            content.style.maxHeight = content.scrollHeight + "px";
+            btn.querySelector('span').innerText = '−';
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
