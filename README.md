@@ -1,4 +1,4 @@
-<! Group leader and supervisor (لوجينا حسام) html>
+ Group leader and supervisor (لوجينا حسام) 
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
