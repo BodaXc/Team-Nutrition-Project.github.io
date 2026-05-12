@@ -1,6 +1,9 @@
- Group leader and supervisor (لوجينا حسام) 
- AI video design(شهد احمد ابراهيم)
- Website design(عبدالرحمن مصطفى)
+<p>
+  Group leader and supervisor (لوجينا حسام) <br>
+  AI video design (شهد احمد ابراهيم) <br>
+  Website design (عبدالرحمن مصطفى)
+</p>
+
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
